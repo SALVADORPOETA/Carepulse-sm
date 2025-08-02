@@ -1,36 +1,7 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CarePulse
 
-## Getting Started
+This healthcare management system was developed following a tutorial by the YouTube channel JavaScript Mastery. It features real-time SMS notifications to streamline the checkup process, along with secure authentication and patient registration workflows. Users can fill out personal details, medical history, and identification, then schedule appointments with their preferred doctor through a smooth, guided booking experience. The system includes confirmation screens, access permission models, and a comprehensive admin panel to manage, reschedule, or cancel appointments—all with automated SMS alerts.
 
-First, run the development server:
+The project leverages Next.js with server-side rendering, nested layouts, server actions, and revalidation for optimal performance and scalability. It includes advanced and reusable form components such as date pickers, international phone inputs, and OTP verification, built using TypeScript, React Hook Form, and Zod. The UI is fully responsive and built with TailwindCSS and ShadCN/UI, while backend functionality is powered by Appwrite, including file storage and Twilio-based SMS notifications. Monitoring and error tracking are handled via Sentry, making this a full-featured and production-ready solution.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<img width="765" height="601" alt="carepulse" src="https://github.com/user-attachments/assets/8f19a53d-20fe-463a-bfb7-50e7bad64653" />
