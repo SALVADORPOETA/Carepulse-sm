@@ -3,7 +3,6 @@
 import {
   AlertDialog,
   AlertDialogAction,
-  AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
   AlertDialogFooter,
@@ -13,7 +12,6 @@ import {
 import {
   InputOTP,
   InputOTPGroup,
-  InputOTPSeparator,
   InputOTPSlot,
 } from '@/components/ui/input-otp'
 import { decryptKey, encryptKey } from '@/lib/utils'
@@ -31,7 +29,7 @@ const PasskeyModal = () => {
 
   const encryptedKey =
     typeof window !== 'undefined'
-      ? window.localStorage.getItem('accessKey')
+      ? window.sessionStorage.getItem('accessKey')
       : null
 
   useEffect(() => {
@@ -52,7 +50,7 @@ const PasskeyModal = () => {
     e.preventDefault()
     if (passkey === process.env.NEXT_PUBLIC_ADMIN_PASSKEY) {
       const encryptedKey = encryptKey(passkey)
-      localStorage.setItem('accessKey', encryptedKey)
+      sessionStorage.setItem('accessKey', encryptedKey)
       setOpen(false)
     } else {
       setError('Invalid passkey. Please try again.')
