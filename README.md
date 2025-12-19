@@ -140,16 +140,30 @@ Visit [http://localhost:3000](http://localhost:3000) to view the application.
 ```
 carepulse-sm/
 ├─ app/
-│  ├─ components/       # Reusable UI components (Input, Textarea, OTP, Select, Table)
-│  ├─ context/          # Auth context and global state
-│  ├─ appwrite/         # API configuration and utility functions
-│  ├─ utils/            # Helper functions (date formatting, encryption, parsing)
-│  └─ types/            # TypeScript type definitions
-├─ pages/
-│  └─ admin/            # Admin dashboard pages
-├─ public/              # Static assets
+│  ├─ admin/
+│  │  └─ page.tsx
+│  ├─ layout.tsx
+│  ├─ page.tsx
+│  └─ ...
+├─ components/
+│  ├─ ui/
+│  │  ├─ input.tsx
+│  │  ├─ textarea.tsx
+│  │  ├─ table.tsx
+│  │  ├─ radio-group.tsx
+│  │  ├─ select.tsx
+│  │  ├─ label.tsx
+│  │  └─ ... 
+│  └─ ... (other components)
+├─ lib/
+│  └─ utils.ts
+├─ types/
+│  └─ appwrite.types.ts
+├─ public/
+│  └─ ... (assets, imágenes, iconos)
 ├─ package.json
 └─ tsconfig.json
+
 ```
 
 ---
