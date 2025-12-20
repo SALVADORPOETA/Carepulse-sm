@@ -1,6 +1,6 @@
 # CarePulse
 
-## 🚀 Introduction
+🚀 Introduction
 
 CarePulse-sm is a **healthcare management system** developed following a tutorial by the YouTube channel **JavaScript Mastery**, with significant **custom improvements implemented independently**.
 
