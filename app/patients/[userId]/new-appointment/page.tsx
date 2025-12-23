@@ -1,6 +1,7 @@
 import AppointmentForm from '@/components/forms/AppointmentForm'
 import { getPatient } from '@/lib/actions/patient.actions'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default async function NewAppointment({
   params,
@@ -13,13 +14,15 @@ export default async function NewAppointment({
     <div className="flex h-screen max-h-screen">
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[860px] flex-1 justify-between">
-          <Image
-            src="/assets/icons/logo-full.svg"
-            height={1000}
-            width={1000}
-            alt="patient"
-            className="mb-12 h-10 w-fit"
-          />
+          <Link href="/" className="cursor-pointer">
+            <Image
+              src="/assets/icons/logo-full.svg"
+              height={1000}
+              width={1000}
+              alt="patient"
+              className="mb-12 h-10 w-fit"
+            />
+          </Link>
           <AppointmentForm
             type="create"
             userId={userId}

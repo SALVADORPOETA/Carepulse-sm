@@ -19,7 +19,7 @@ const Success = async ({ params, searchParams }: SearchParamProps) => {
   return (
     <div className="flex h-screen max-h-screen px-[5%]">
       <div className="success-img">
-        <Link href="/">
+        <Link href="/" className="cursor-pointer">
           <Image
             src="/assets/icons/logo-full.svg"
             height={1000}

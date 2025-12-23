@@ -50,7 +50,9 @@ export default function AdminContent({ appointments }: any) {
           />
         </Link>
         <div className="flex items-center gap-6 md:gap-12">
-          <p className="text-16-semibold">Admin Dashboard</p>
+          <p className="text-12-semibold md:text-16-semibold">
+            Admin Dashboard
+          </p>
           <button
             onClick={handleLogout}
             className="px-4 py-1 bg-red-500 text-white rounded-full hover:bg-red-600 transition"
