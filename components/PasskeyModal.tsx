@@ -88,12 +88,30 @@ const PasskeyModal = () => {
             onChange={(value) => setPasskey(value)}
           >
             <InputOTPGroup className="shad-otp">
-              <InputOTPSlot className="shad-otp-slot" index={0} />
-              <InputOTPSlot className="shad-otp-slot" index={1} />
-              <InputOTPSlot className="shad-otp-slot" index={2} />
-              <InputOTPSlot className="shad-otp-slot" index={3} />
-              <InputOTPSlot className="shad-otp-slot" index={4} />
-              <InputOTPSlot className="shad-otp-slot" index={5} />
+              <InputOTPSlot
+                className="shad-otp-slot h-10 w-10 text-sm sm:h-12 sm:w-12 sm:text-base"
+                index={0}
+              />
+              <InputOTPSlot
+                className="shad-otp-slot h-10 w-10 text-sm sm:h-12 sm:w-12 sm:text-base"
+                index={1}
+              />
+              <InputOTPSlot
+                className="shad-otp-slot h-10 w-10 text-sm sm:h-12 sm:w-12 sm:text-base"
+                index={2}
+              />
+              <InputOTPSlot
+                className="shad-otp-slot h-10 w-10 text-sm sm:h-12 sm:w-12 sm:text-base"
+                index={3}
+              />
+              <InputOTPSlot
+                className="shad-otp-slot h-10 w-10 text-sm sm:h-12 sm:w-12 sm:text-base"
+                index={4}
+              />
+              <InputOTPSlot
+                className="shad-otp-slot h-10 w-10 text-sm sm:h-12 sm:w-12 sm:text-base"
+                index={5}
+              />
             </InputOTPGroup>
           </InputOTP>
           {error && (
