@@ -29,7 +29,6 @@ const InputOTPGroup = React.forwardRef<
   <div ref={ref} className={cn('flex items-center', className)} {...props} />
 ))
 InputOTPGroup.displayName = 'InputOTPGroup'
-// Busca esta sección en tu archivo de componentes de UI
 const InputOTPSlot = React.forwardRef<
   React.ElementRef<'div'>,
   React.ComponentPropsWithoutRef<'div'> & { index: number }
@@ -41,17 +40,24 @@ const InputOTPSlot = React.forwardRef<
     <div
       ref={ref}
       className={cn(
-        'relative flex items-center justify-center ...', // tus clases existentes
+        // Clases base
+        'relative flex items-center justify-center transition-all',
+        // Clases de tamaño y bordes que ya tenías
+        'h-7 w-7 text-xs border-y border-r border-input first:rounded-l-md first:border-l last:rounded-r-md md:h-12 md:w-12 md:text-base',
+        // ESTADO ACTIVO: Aquí iluminamos el cuadro
+        isActive &&
+          'z-10 ring-2 ring-green-500 border-green-500 ring-offset-background',
         className
       )}
       {...props}
     >
-      {/* CAMBIO AQUÍ: Si char existe, mostramos el símbolo de censura */}
-      {char ? <div className="h-2 w-2 rounded-full bg-current" /> : null}
+      {/* CENSURA: Mostramos el punto solo si hay un carácter */}
+      {char && <div className="h-2 w-2 rounded-full bg-white md:h-3 md:w-3" />}
 
+      {/* CARET (Cursor parpadeante): Siempre encima y visible si está activo */}
       {hasFakeCaret && (
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-          <div className="h-4 w-px animate-caret-blink bg-foreground" />
+          <div className="h-4 w-px animate-caret-blink bg-green-500 md:h-6" />
         </div>
       )}
     </div>
