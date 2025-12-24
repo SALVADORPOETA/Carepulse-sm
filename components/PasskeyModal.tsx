@@ -91,73 +91,22 @@ const PasskeyModal = () => {
             value={passkey}
             onChange={(value) => setPasskey(value)}
           >
-            <InputOTPGroup className="flex justify-center gap-0 sm:gap-1 md:gap-3 sm:shad-otp">
-              <InputOTPSlot
-                className="
-                  shad-otp-slot
-                  h-8 w-8
-                  text-sm
-                  p-0
-                  md:h-12 md:w-12
-                  md:text-base
-                "
-                index={0}
-              />
-              <InputOTPSlot
-                className="
-                  shad-otp-slot
-                  h-8 w-8
-                  text-sm
-                  p-0
-                  md:h-12 md:w-12
-                  md:text-base
-                "
-                index={1}
-              />
-              <InputOTPSlot
-                className="
-                  shad-otp-slot
-                  h-8 w-8
-                  text-sm
-                  p-0
-                  md:h-12 md:w-12
-                  md:text-base
-                "
-                index={2}
-              />
-              <InputOTPSlot
-                className="
-                  shad-otp-slot
-                  h-8 w-8
-                  text-sm
-                  p-0
-                  md:h-12 md:w-12
-                  md:text-base
-                "
-                index={3}
-              />
-              <InputOTPSlot
-                className="
-                  shad-otp-slot
-                  h-8 w-8
-                  text-sm
-                  p-0
-                  md:h-12 md:w-12
-                  md:text-base
-                "
-                index={4}
-              />
-              <InputOTPSlot
-                className="
-                  shad-otp-slot
-                  h-8 w-8
-                  text-sm
-                  p-0
-                  md:h-12 md:w-12
-                  md:text-base
-                "
-                index={5}
-              />
+            <InputOTPGroup className="flex justify-center gap-1 md:gap-3">
+              {[0, 1, 2, 3, 4, 5].map((index) => (
+                <InputOTPSlot
+                  key={index}
+                  index={index}
+                  className="
+                    shad-otp-slot
+                    p-0
+                    h-7 w-7
+                    text-xs
+                    min-w-0 min-h-0
+                    md:h-12 md:w-12
+                    md:text-base
+                  "
+                />
+              ))}
             </InputOTPGroup>
           </InputOTP>
           {error && (
