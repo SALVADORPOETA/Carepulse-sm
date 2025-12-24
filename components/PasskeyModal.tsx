@@ -96,7 +96,7 @@ const PasskeyModal = () => {
             value={passkey}
             onChange={(value) => setPasskey(value)}
           >
-            <InputOTPGroup className="flex justify-center gap-1 sm:gap-3">
+            <InputOTPGroup className="flex justify-center md:shad-otp">
               <InputOTPSlot
                 className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
                 index={0}
@@ -130,12 +130,14 @@ const PasskeyModal = () => {
           )}
         </div>
         <AlertDialogFooter>
-          <AlertDialogAction
-            onClick={(e) => validatePasskey(e)}
-            className="shad-primary-btn w-full"
-          >
-            Enter Admin Passkey
-          </AlertDialogAction>
+          <div className="flex justify-center">
+            <AlertDialogAction
+              onClick={(e) => validatePasskey(e)}
+              className="shad-primary-btn w-[80%] md:w-full"
+            >
+              Enter Admin Passkey
+            </AlertDialogAction>
+          </div>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
