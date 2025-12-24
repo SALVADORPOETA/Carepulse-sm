@@ -89,27 +89,27 @@ const PasskeyModal = () => {
           >
             <InputOTPGroup className="shad-otp">
               <InputOTPSlot
-                className="shad-otp-slot h-10 w-10 text-sm sm:h-12 sm:w-12 sm:text-base"
+                className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
                 index={0}
               />
               <InputOTPSlot
-                className="shad-otp-slot h-10 w-10 text-sm sm:h-12 sm:w-12 sm:text-base"
+                className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
                 index={1}
               />
               <InputOTPSlot
-                className="shad-otp-slot h-10 w-10 text-sm sm:h-12 sm:w-12 sm:text-base"
+                className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
                 index={2}
               />
               <InputOTPSlot
-                className="shad-otp-slot h-10 w-10 text-sm sm:h-12 sm:w-12 sm:text-base"
+                className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
                 index={3}
               />
               <InputOTPSlot
-                className="shad-otp-slot h-10 w-10 text-sm sm:h-12 sm:w-12 sm:text-base"
+                className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
                 index={4}
               />
               <InputOTPSlot
-                className="shad-otp-slot h-10 w-10 text-sm sm:h-12 sm:w-12 sm:text-base"
+                className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
                 index={5}
               />
             </InputOTPGroup>
