@@ -66,13 +66,8 @@ const PasskeyModal = () => {
     <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogContent
         className="
-    shad-alert-dialog
-    w-[90vw]
-    max-w-[90vw]
-    p-4
-    sm:p-6
-    sm:max-w-md
-  "
+          shad-alert-dialog
+        "
       >
         <AlertDialogHeader>
           <AlertDialogTitle className="flex items-start justify-between">
@@ -90,35 +85,77 @@ const PasskeyModal = () => {
             To access the admin page, please enter the passkey.
           </AlertDialogDescription>
         </AlertDialogHeader>
-        <div>
+        <div className="flex justify-center">
           <InputOTP
             maxLength={6}
             value={passkey}
             onChange={(value) => setPasskey(value)}
           >
-            <InputOTPGroup className="flex justify-center md:shad-otp">
+            <InputOTPGroup className="flex justify-center gap-0 sm:gap-1 md:gap-3 sm:shad-otp">
               <InputOTPSlot
-                className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
+                className="
+                  shad-otp-slot
+                  h-8 w-8
+                  text-sm
+                  p-0
+                  md:h-12 md:w-12
+                  md:text-base
+                "
                 index={0}
               />
               <InputOTPSlot
-                className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
+                className="
+                  shad-otp-slot
+                  h-8 w-8
+                  text-sm
+                  p-0
+                  md:h-12 md:w-12
+                  md:text-base
+                "
                 index={1}
               />
               <InputOTPSlot
-                className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
+                className="
+                  shad-otp-slot
+                  h-8 w-8
+                  text-sm
+                  p-0
+                  md:h-12 md:w-12
+                  md:text-base
+                "
                 index={2}
               />
               <InputOTPSlot
-                className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
+                className="
+                  shad-otp-slot
+                  h-8 w-8
+                  text-sm
+                  p-0
+                  md:h-12 md:w-12
+                  md:text-base
+                "
                 index={3}
               />
               <InputOTPSlot
-                className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
+                className="
+                  shad-otp-slot
+                  h-8 w-8
+                  text-sm
+                  p-0
+                  md:h-12 md:w-12
+                  md:text-base
+                "
                 index={4}
               />
               <InputOTPSlot
-                className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
+                className="
+                  shad-otp-slot
+                  h-8 w-8
+                  text-sm
+                  p-0
+                  md:h-12 md:w-12
+                  md:text-base
+                "
                 index={5}
               />
             </InputOTPGroup>
@@ -130,7 +167,7 @@ const PasskeyModal = () => {
           )}
         </div>
         <AlertDialogFooter>
-          <div className="flex justify-center">
+          <div className="flex justify-center md:justify-start w-full">
             <AlertDialogAction
               onClick={(e) => validatePasskey(e)}
               className="shad-primary-btn w-[80%] md:w-full"
