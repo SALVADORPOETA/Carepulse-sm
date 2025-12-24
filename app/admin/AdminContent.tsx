@@ -50,7 +50,7 @@ export default function AdminContent({ appointments }: any) {
           />
         </Link>
         <div className="flex items-center gap-6 md:gap-12">
-          <p className="ml-2 text-12-semibold md:text-16-semibold">
+          <p className="ml-3 text-12-semibold md:text-16-semibold">
             Admin Dashboard
           </p>
           <button
