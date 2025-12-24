@@ -119,7 +119,7 @@ const PasskeyModal = () => {
           <div className="flex justify-center md:justify-start w-full">
             <AlertDialogAction
               onClick={(e) => validatePasskey(e)}
-              className="shad-primary-btn w-[80%] md:w-full"
+              className="shad-primary-btn w-[90%] md:w-full"
             >
               Enter Admin Passkey
             </AlertDialogAction>
