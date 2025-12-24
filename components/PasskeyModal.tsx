@@ -69,6 +69,8 @@ const PasskeyModal = () => {
     shad-alert-dialog
     w-[90vw]
     max-w-[90vw]
+    p-4
+    sm:p-6
     sm:max-w-md
   "
       >
