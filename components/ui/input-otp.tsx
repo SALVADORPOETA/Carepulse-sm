@@ -29,7 +29,7 @@ const InputOTPGroup = React.forwardRef<
   <div ref={ref} className={cn('flex items-center', className)} {...props} />
 ))
 InputOTPGroup.displayName = 'InputOTPGroup'
-
+// Busca esta sección en tu archivo de componentes de UI
 const InputOTPSlot = React.forwardRef<
   React.ElementRef<'div'>,
   React.ComponentPropsWithoutRef<'div'> & { index: number }
@@ -41,21 +41,14 @@ const InputOTPSlot = React.forwardRef<
     <div
       ref={ref}
       className={cn(
-        `
-        relative flex items-center justify-center
-        h-7 w-7 text-xs
-        border-y border-r border-input
-        transition-all
-        first:rounded-l-md first:border-l
-        last:rounded-r-md
-        md:h-12 md:w-12 md:text-base
-        `,
-        isActive && 'z-10 ring-2 ring-ring ring-offset-background',
+        'relative flex items-center justify-center ...', // tus clases existentes
         className
       )}
       {...props}
     >
-      {char}
+      {/* CAMBIO AQUÍ: Si char existe, mostramos el símbolo de censura */}
+      {char ? <div className="h-2 w-2 rounded-full bg-current" /> : null}
+
       {hasFakeCaret && (
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
           <div className="h-4 w-px animate-caret-blink bg-foreground" />
@@ -64,6 +57,40 @@ const InputOTPSlot = React.forwardRef<
     </div>
   )
 })
+// const InputOTPSlot = React.forwardRef<
+//   React.ElementRef<'div'>,
+//   React.ComponentPropsWithoutRef<'div'> & { index: number }
+// >(({ index, className, ...props }, ref) => {
+//   const inputOTPContext = React.useContext(OTPInputContext)
+//   const { char, hasFakeCaret, isActive } = inputOTPContext.slots[index]
+
+//   return (
+//     <div
+//       ref={ref}
+//       className={cn(
+//         `
+//         relative flex items-center justify-center
+//         h-7 w-7 text-xs
+//         border-y border-r border-input
+//         transition-all
+//         first:rounded-l-md first:border-l
+//         last:rounded-r-md
+//         md:h-12 md:w-12 md:text-base
+//         `,
+//         isActive && 'z-10 ring-2 ring-ring ring-offset-background',
+//         className
+//       )}
+//       {...props}
+//     >
+//       {char}
+//       {hasFakeCaret && (
+//         <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+//           <div className="h-4 w-px animate-caret-blink bg-foreground" />
+//         </div>
+//       )}
+//     </div>
+//   )
+// })
 InputOTPSlot.displayName = 'InputOTPSlot'
 
 const InputOTPSeparator = React.forwardRef<
