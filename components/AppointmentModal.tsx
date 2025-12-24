@@ -35,7 +35,16 @@ const AppointmentModal = ({
           {type}
         </Button>
       </DialogTrigger>
-      <DialogContent className="shad-dialog sm:max-w-md">
+      <DialogContent
+        className="
+          shad-dialog
+          max-h-[100svh]
+          overflow-y-auto
+          sm:max-h-none
+          sm:overflow-visible
+          sm:max-w-md
+        "
+      >
         <DialogHeader className="mb-4 space-y-3">
           <DialogTitle className="capitalize">{type} Appointment</DialogTitle>
           <DialogDescription>
