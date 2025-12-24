@@ -254,8 +254,13 @@
     @apply w-full flex justify-between !important;
   }
 
-  .shad-otp-slot {
+  /* .shad-otp-slot {
     @apply text-36-bold justify-center flex border border-dark-500 rounded-lg size-16 gap-4 !important;
+  } */
+
+  .shad-otp-slot {
+    /* Usamos clases pequeñas por defecto y luego md: para escritorio */
+    @apply text-24-bold justify-center flex border border-dark-500 rounded-lg size-10 gap-2 md:size-16 !important;
   }
 
   .shad-alert-dialog {
