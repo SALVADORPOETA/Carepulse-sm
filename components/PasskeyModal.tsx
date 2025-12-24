@@ -96,7 +96,7 @@ const PasskeyModal = () => {
             value={passkey}
             onChange={(value) => setPasskey(value)}
           >
-            <InputOTPGroup className="shad-otp">
+            <InputOTPGroup className="flex justify-center gap-1 sm:gap-3">
               <InputOTPSlot
                 className="shad-otp-slot h-8 w-8 text-sm md:h-12 md:w-12 md:text-base"
                 index={0}
