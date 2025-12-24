@@ -64,7 +64,14 @@ const PasskeyModal = () => {
 
   return (
     <AlertDialog open={open} onOpenChange={setOpen}>
-      <AlertDialogContent className="shad-alert-dialog">
+      <AlertDialogContent
+        className="
+    shad-alert-dialog
+    w-[90vw]
+    max-w-[90vw]
+    sm:max-w-md
+  "
+      >
         <AlertDialogHeader>
           <AlertDialogTitle className="flex items-start justify-between">
             Admin Access Verification
