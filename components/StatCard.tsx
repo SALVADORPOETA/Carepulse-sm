@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import Image from 'next/image'
-// import React from 'react'
+import React from 'react'
 
 interface StatCardProps {
   type: 'appointments' | 'pending' | 'cancelled'
