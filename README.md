@@ -8,6 +8,14 @@ The system offers real-time **SMS notifications** to streamline patient checkups
 
 This project demonstrates a **production-ready, full-stack solution** with enhanced UX and security improvements beyond the original tutorial.
 
+---
+
+## 📖 Pages
+
+### Home Page
+
+The CarePulse landing page serves as a dual-entry hub for both patients and administrators. It features a streamlined registration system validated via Zod and administrative access control through a session-encrypted Passkey gateway. The design emphasizes user experience (UX) with optimized input components like OTP and real-time schema validation.
+
 <img width="765" height="601" alt="carepulse" src="https://github.com/user-attachments/assets/8f19a53d-20fe-463a-bfb7-50e7bad64653" />
 
 ---
