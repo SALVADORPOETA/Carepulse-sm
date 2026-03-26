@@ -18,6 +18,25 @@ The CarePulse landing page serves as a dual-entry hub for both patients and admi
 
 <img width="765" height="601" alt="carepulse" src="https://github.com/user-attachments/assets/8f19a53d-20fe-463a-bfb7-50e7bad64653" />
 
+### Admin Page
+
+The Admin Dashboard is a high-efficiency management console that centralizes the status of all medical appointments. It utilizes a hybrid Next.js architecture to fetch data on the server while maintaining a client-side security layer through encrypted passkey validation. It features key metric visualizations and an advanced data table for daily operational management.
+
+<img width="781" height="633" alt="carepulse1" src="https://github.com/user-attachments/assets/637e38b9-794c-4ce1-9a5b-0174f82964f0" />
+
+### Register Page
+
+The Patient Registration page manages the transition from a basic user profile to a comprehensive medical record. It captures sensitive and detailed data, ensuring a seamless and consistent user experience within the CarePulse ecosystem.
+
+<img width="777" height="627" alt="carepulse2" src="https://github.com/user-attachments/assets/aaae3423-78f8-40d7-a09c-d5e3c98384ca" />
+
+### New Appointment Page
+
+The appointment module manages the lifecycle from request to confirmation. It includes a dynamic creation form and a success page that provides real-time details about the assigned physician and the scheduled time. The entire flow is optimized to provide clarity and reduce patient anxiety through immediate visual confirmations.
+
+<img width="763" height="629" alt="carepulse3" src="https://github.com/user-attachments/assets/d5d01cea-cdbd-446e-be96-b9d493bc6051" />
+
+
 ---
 
 ## ⚙️ Features
