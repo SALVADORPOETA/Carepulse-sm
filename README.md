@@ -22,7 +22,7 @@ The CarePulse landing page serves as a dual-entry hub for both patients and admi
 
 The Admin Dashboard is a high-efficiency management console that centralizes the status of all medical appointments. It utilizes a hybrid Next.js architecture to fetch data on the server while maintaining a client-side security layer through encrypted passkey validation. It features key metric visualizations and an advanced data table for daily operational management.
 
-<img width="781" height="633" alt="carepulse1" src="https://github.com/user-attachments/assets/637e38b9-794c-4ce1-9a5b-0174f82964f0" />
+<img width="771" height="625" alt="carepulse1" src="https://github.com/user-attachments/assets/4ce9a73c-9f26-4073-8d53-7e04a593458b" />
 
 <img width="775" height="629" alt="carepulse4" src="https://github.com/user-attachments/assets/f0812a13-cb9b-468d-bbf4-c1bd0b19ce67" />
 
