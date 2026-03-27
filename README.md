@@ -26,6 +26,8 @@ The Admin Dashboard is a high-efficiency management console that centralizes the
 
 <img width="775" height="629" alt="carepulse4" src="https://github.com/user-attachments/assets/f0812a13-cb9b-468d-bbf4-c1bd0b19ce67" />
 
+<img width="775" height="623" alt="carepulse5" src="https://github.com/user-attachments/assets/7ec0ddb8-14ba-49b7-a499-522e5839fd3c" />
+
 ### Register Page
 
 The Patient Registration page manages the transition from a basic user profile to a comprehensive medical record. It captures sensitive and detailed data, ensuring a seamless and consistent user experience within the CarePulse ecosystem.
