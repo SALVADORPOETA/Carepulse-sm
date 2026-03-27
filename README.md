@@ -30,6 +30,8 @@ The Patient Registration page manages the transition from a basic user profile t
 
 <img width="777" height="627" alt="carepulse2" src="https://github.com/user-attachments/assets/aaae3423-78f8-40d7-a09c-d5e3c98384ca" />
 
+<img width="775" height="629" alt="carepulse4" src="https://github.com/user-attachments/assets/f0812a13-cb9b-468d-bbf4-c1bd0b19ce67" />
+
 ### New Appointment Page
 
 The appointment module manages the lifecycle from request to confirmation. It includes a dynamic creation form and a success page that provides real-time details about the assigned physician and the scheduled time. The entire flow is optimized to provide clarity and reduce patient anxiety through immediate visual confirmations.
