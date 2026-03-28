@@ -40,6 +40,7 @@ The appointment module manages the lifecycle from request to confirmation. It in
 
 <img width="763" height="629" alt="carepulse3" src="https://github.com/user-attachments/assets/d5d01cea-cdbd-446e-be96-b9d493bc6051" />
 
+### *Success*
 <img width="761" height="627" alt="carepulse6" src="https://github.com/user-attachments/assets/5eec4501-c650-41d8-8ea0-e8c18436ec02" />
 
 ---
