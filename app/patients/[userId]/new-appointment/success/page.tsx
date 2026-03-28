@@ -5,6 +5,7 @@ import { formatDateTime } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { RenderDateTime } from '@/components/RenderDateTime'
 
 const Success = async ({ params, searchParams }: SearchParamProps) => {
   const { userId } = await params
@@ -13,7 +14,7 @@ const Success = async ({ params, searchParams }: SearchParamProps) => {
   const appointment = await getAppointment(appointmentId)
 
   const doctor = Doctors.find(
-    (doc) => doc.name === appointment.primaryPhysician
+    (doc) => doc.name === appointment.primaryPhysician,
   )
 
   return (
@@ -60,7 +61,10 @@ const Success = async ({ params, searchParams }: SearchParamProps) => {
               width={24}
               alt="calendar"
             />
-            <p>{formatDateTime(appointment.schedule).dateTime}</p>
+            {/* <p>{formatDateTime(appointment.schedule).dateTime}</p> */}
+            <p>
+              <RenderDateTime date={appointment.schedule} />
+            </p>
           </div>
         </section>
         <Button variant="outline" className="shad-primary-btn" asChild>
