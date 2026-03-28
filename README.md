@@ -38,7 +38,10 @@ The appointment module manages the lifecycle from request to confirmation. It in
 
 <img width="763" height="629" alt="carepulse3" src="https://github.com/user-attachments/assets/d5d01cea-cdbd-446e-be96-b9d493bc6051" />
 
-### *Success*
+### Success Page
+
+The Success Page provides immediate closure to the appointment booking process. It functions as a dynamic server-side component that retrieves specific record details to reassure the patient. By fetching data based on the appointmentId from the URL, it ensures that the user sees the exact information related to their request, including the assigned physician’s profile and the formatted date and time. This page is optimized for clarity, reducing patient anxiety through a clean visual confirmation and a quick-action path to schedule further appointments.
+
 <img width="761" height="627" alt="carepulse6" src="https://github.com/user-attachments/assets/5eec4501-c650-41d8-8ea0-e8c18436ec02" />
 
 ---
