@@ -1,7 +1,5 @@
 # CarePulse
 
-## 🚀 Introduction
-
 CarePulse-sm is a **healthcare management system** developed following a tutorial by the YouTube channel **JavaScript Mastery**, with significant **custom improvements implemented independently**.
 
 The system offers real-time **SMS notifications** to streamline patient checkups and secure authentication and registration workflows. Users can submit personal details, medical history, and identification, then schedule appointments with their preferred doctor. The platform provides confirmation screens, access permission models, and a comprehensive admin panel for managing, rescheduling, or canceling appointments—all with automated SMS alerts.
